@@ -28,6 +28,9 @@
 		<!-- <value condition="Control.HasFocus(63707)">Enabling this option will show colored studio logos for media content in the FlixPanel.</value> -->
 		<value condition="Control.HasFocus(63707)">Enabling this option will auto end playback after a custom number of minutes [B]IF[/B] playback is paused.</value>
 		<value condition="Control.HasFocus(63708)">Enter custom delay for ending playback.</value>
+		<value condition="Control.HasFocus(63709)">Tracks and color-codes movies based on digital release status: green (digitally released and within expiry window and past recent window), yellow (digitally released and within recent window), red (not yet digitally released), and white (missing digital release info or past expiry window).</value>
+		<value condition="Control.HasFocus(63710)">Set digital release recent window. Any time this value is changed requires clearing the ratings cache and restarting Kodi.</value>
+		<value condition="Control.HasFocus(63711)">Set digital release expiry window. Movies whose digital release date is past this window will display the original release date. Any time this value is changed requires clearing the ratings cache and restarting Kodi.</value>
 
 		<!-- ARTWORK SECTION -->
 		<value condition="Container(9000).HasFocus(6) + !ControlGroup(10000).HasFocus">Artwork settings</value>
@@ -63,9 +66,8 @@
 		<!-- SEARCH SECTION -->
 		<value condition="Container(9000).HasFocus(3) + !ControlGroup(10000).HasFocus">Search settings</value>
 		<value condition="Control.HasFocus(64700)">Set your desired search provider. This will use the selected addon for searches in the search window and default search dialog. This setting can be changed on the fly in the search window button menu.</value>
-		<value condition="Control.HasFocus(64701)">Enabling this option will use the built-in search window. Disabling this option will use the default search dialog. The advantage to using the search window is that you can see results for multiple media types all at once (movies, tvshows, etc).</value>
-		<value condition="Control.HasFocus(64702)">Set the search window behavior. OPEN KEYBOARD will open a keyboard when the Search button is clicked in the home screen button menu. OPEN SEARCH WINDOW will open the search window where you can see your search history, view TRAKT lists, etc.</value>
-		<value condition="Control.HasFocus(64703) | Control.HasFocus(64704) | Control.HasFocus(64705) | Control.HasFocus(64706) | Control.HasFocus(64707) | Control.HasFocus(64708) | Control.HasFocus(64709) | Control.HasFocus(64710) | Control.HasFocus(64711) | Control.HasFocus(64712) | Control.HasFocus(64713) | Control.HasFocus(64714)">Enabling or disable the showing of specific search widgets.</value>
+		<value condition="Control.HasFocus(64701)">Set the search icon behavior. OPEN SEARCH WINDOW will open the search window where you can see your search history, view TRAKT lists, etc. OPEN SEARCH DIALOG will open a simple dialog with addon search paths. The advantage to using the search window is that you can see results for multiple media types all at once (movies, tvshows, etc).</value>
+		<value condition="Control.HasFocus(64702) | Control.HasFocus(64703) | Control.HasFocus(64704) | Control.HasFocus(64705) | Control.HasFocus(64706) | Control.HasFocus(64707) | Control.HasFocus(64708) | Control.HasFocus(64709) | Control.HasFocus(64710) | Control.HasFocus(64711) | Control.HasFocus(64712) | Control.HasFocus(64713)">Enabling or disable the showing of specific search widgets.</value>
 
 		<!-- OSD SECTION -->
 		<value condition="Container(9000).HasFocus(7) + !ControlGroup(10000).HasFocus">$LOCALIZE[31171]</value>
